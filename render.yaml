@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: clause-level-sentiment-analysis
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main:app 
